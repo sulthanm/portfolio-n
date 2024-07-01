@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Sulthans's Portfolio</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul id="side-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <span class="material-symbols-outlined" onclick="closemenu()">
+                        close
+                    </span>
+                </ul>
+                <span class="material-symbols-outlined" onclick="openmenu()">
+                    menu_open
+                </span>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Sulthan</span> from INDIA</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------about------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am currently working as a software engineer at Samsung R&D Institute India-Bangalore (SRI-B),
+                        where I am actively contributing to the development of cutting-edge projects in a fast-paced and
+                        innovation-driven environment.
+                        As a dedicated software engineer with a fresh perspective and over 2+ years of hands-on
+                        experience in software development,
+                        my journey in this dynamic field has been marked by a thirst for knowledge, a passion for
+                        problem-solving, and a commitment to delivering high-quality solutions.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>JAVA</span><br>Data Structures/Algorithms</li>
+                            <li><span>Front-End Web Development</span><br>HTML, CSS, JS, React.js</li>
+                            <li><span>Back-End Web Development</span><br>Node.js, Express, Python, Flask, MongoDB, SQL
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 March - Current</span><br>Software Engineer at SAMSUNG</li>
+                            <li><span>2022 January - 2022 December</span><br>Junior Software Engineer at EPAM Systems
+                            </li>
+                            <li><span>2021 September - 2022 January</span><br>Teacher Assistant at Coding Ninjas</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018 - 2022 </span><br>B.Tech in ECE at Madanapalle Institute of Technology &
+                                Science</li>
+                            <li><span>2016 - 2018</span><br>Higher Secondary at Sree Vidyanikethan International School
+                            </li>
+                            <li><span>2015 - 2016</span><br>Secondary at Sree Vidyanikethan International School</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <img src="images/about-me.jpg" alt="about-me" id="image1">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------services----------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <span class="material-symbols-outlined">
+                        code
+                    </span>
+                    <h2>Software Engineer</h2>
+                    <p>
+                        Skilled Web Developer with a comprehensive understanding of diverse technologies.
+                        Proven ability to design and implement web-based tools to address specific requirements.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">
+                        terminal
+                    </span>
+                    <h2>Junior Software Engineer</h2>
+                    <p>
+                        I embarked on a dynamic journey that spanned a 6-month internship followed by a successful
+                        transition into a full-time role.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">
+                        cast_for_education
+                    </span>
+                    <h2>Teacher Assistant</h2>
+                    <p>
+                        Offered individualized help to students, addressing their coding challenges, answering
+                        questions, and providing additional explanations as needed.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------portfolio---------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work"> 
+                    <img src="images/social-media.jpg" alt="">
+                    <div class="layer">
+                        <h3><b>Social Media Web App</b></h3>
+                        <p>
+                            It is a web application, allows you to connect talented people around you
+                        </p>
+                        <a href="https://github.com/sulthanm/joinow"><span class="material-symbols-outlined"> open_in_new</span></a>
+                    </div>
+
+                </div>
+                <div class="work"> 
+                    <img src="images/video-streaming.jpg" alt="">
+                    <div class="layer">
+                        <h3><b>Video-Streaming</b></h3>
+                        <p>
+                            Our video streaming application enables users to upload and watch videos in real-time, offering a smooth and seamless viewing experience without the need for downloads.
+                        </p>
+                        <a href="https://github.com/sulthanm/video-streaming"><span class="material-symbols-outlined"> open_in_new</span></a>
+                    </div>
+                </div>
+                <div class="work"> 
+                    <img src="images/music.jpg" alt="">
+                    <div class="layer">
+                        <h3><b>Music UI</b></h3>
+                        <p>
+                            It is a Music Player includes multiple screens.
+                        </p>
+                        <a href="https://github.com/sulthanm/Music-Playlist"><span class="material-symbols-outlined"> open_in_new</span></a>
+                    </div>
+                </div>
+                <div class="work see-more"> 
+                    <img src="images/todo-list.jpg" alt="">
+                    <div class="layer">
+                        <h3><b>To Do List</b></h3>
+                        <p>
+                            It is an organizational tool that helps individuals manage their tasks and responsibilities
+                        </p>
+                        <a href="https://github.com/sulthanm/todo_lIst"><span class="material-symbols-outlined"> open_in_new</span></a>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="btn" onclick="showMorWork()">See more</button>
+        </div>
+    </div>
+    <!-- ------------------------contact-------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title-1">Contact Me</h1>
+                    <p>
+                        <span class="material-symbols-outlined">
+                            alternate_email
+                        </span>
+                        sulthanso73@gmail.com
+                    </p>
+                    <p>
+                        <span class="material-symbols-outlined">
+                            smartphone
+                        </span>
+                        +91-7893318805
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://leetcode.com/u/sulthan_mogal/"><img src="./images/leetcode.png" alt="leetcode"></a>
+                        <a href="https://www.linkedin.com/in/sulthan-m/"><img src="./images/linkedin.png" alt="linked-in"></a>
+                        <a href="https://www.geeksforgeeks.org/user/sulthanso73/"><img src="./images/gfg.jpg" alt="gfg"></a>
+                        <a href="https://www.hackerrank.com/profile/sulthanso73"><img src="./images/hackerrank.png" alt="hacker-rank"></a>
+                    </div>
+                    <a href="./images/Mogal_Sulthan_Resume.pdf" download class="btn btn-2">
+                        Download Resume
+                    </a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                    <span id="msg"> 
+                        <p>Hello There...Feel Free to contact </p>
+                        
+                        <span class="material-symbols-outlined">
+                            pan_tool_alt
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Sulthan Mogal. <span class="material-symbols-outlined heart">
+                favorite
+                </span>
+            </p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="./contact-form.js"></script>
+
+</body>
+
+</html>
